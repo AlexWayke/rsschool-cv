@@ -1,1 +1,1 @@
-https://github.com/AlexWayke/rsschool-cv/cv
+https://AlexWayke.github.io/rsschool-cv/cv
