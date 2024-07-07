@@ -4,8 +4,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./normalize.css">
   <title>RSSchool CV</title>
 </head>
 <body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-li"><a href="#about">About self</a></li>
+        <li class="header__nav-li"><a href="#skills">Skills'n'education</a></li>
+        <li class="header__nav-li"><a href="#code">Projects'n'code</a></li>
+        <li class="header__nav-li"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section class="greeting wrapper__greeting">
+        <div class="greeting__photo">
+          <img src="./src/photo_2022-11-20_21-35-40.jpg" alt="photo">
+        </div>
+        <div class="greeting__text">
+          <p>
+            HI
+          </p>
+          <h1>Alexander Poltavskiy</h1>
+          <p>my name is:</p>
+        </div>
+      </section>
+      <section id="about" class="about wrapper__about">
+        <div class="about__sidebar">
+          <h2 class="about__title">
+            About me
+          </h2>
+          <div class="about__img">
+            <img src="./src/3421a3bfecd4650f2c300bcbf8f4635a.jpg" alt="about__img">
+          </div>
+        </div>
+        <div class="about__content">
+          <p><span>I started my career</span> as a front-end developer <span>in 2020</span> and combined fulltime work with study for a long time until I found my first job.</p>
+          <p>Now i <span>live in Samara</span> and working as a front-end developer for the <span>"Guild PRO"</span> company about <span>1.5 year</span>.</p>
+          <p>I love <span>board games</span> and <span>music</span>, so I spend my free time to studies and hobbies.</p>
+          <p>I'm not a person of talented, but <span>a lot of zeal</span>.</p>
+        </div>
+      </section>
+      <section id="skills" class="skills wrapper__skills">
+        <h2 class="skills__title">
+          Skills'n'education
+        </h2>
+        <div class="skills__education">
+          <ul>
+            <li>Samara Technical University</li>
+            <li>Kata Academy</li>
+            <li>RSSchool</li>
+          </ul>
+        </div>
+        <div class="skills__prog">
+          <ul>
+            <li><img src="./src/icons/icon-html.svg" alt="icon"><p>HTML & CSS</p></li>
+            <li><img src="./src/icons/icon-figma.svg" alt="icon"><p>Figma</p></li>
+            <li><img src="./src/icons/icon-js.svg" alt="icon"><p>JS</p></li>
+            <li><img src="./src/icons/icon-vue.svg" alt="icon"><p>Vue</p></li>
+            <li><img src="./src/icons/icon-git.svg" alt="icon"><p>Git</p></li>
+            <li><img src="./src/icons/icon-webpack.svg" alt="icon"><p>Webpack</p></li>
+          </ul>
+        </div>
+        <div class="skills__lang">
+          <div class="skills__lang-title">
+            Languages
+          </div>
+          <ul>
+            <li>Russian</li>
+            <li>English - <span>Intermediate</span></li>
+            <li>Chinese - <span>Beginner</span></li>
+          </ul>
+        </div>
+      </section>
+      <section id="code" class="code wrapper__code">
+        <h2 class="code__title">Projects'n'code</h2>
+        <div class="code__projects">
+          <a href="https://github.com/AlexWayke/pair-game">PAIR GAME</a>
+        </div>
+        <div class="code__exemple">
+          <code>
+            function tribonacci(signature,n){<br>
+            let arr = signature;<br>
+            if(arr.length > n){<br>
+            &nbsp;&nbsp;arr = arr.slice(0,n);<br>
+            } else if(arr.length !== n) {<br>
+              &nbsp;&nbsp;let newInt = arr.slice(-3).reduce((acc,num)=> acc + num);<br>
+              &nbsp;&nbsp;arr.push(newInt);<br>
+              &nbsp;&nbsp;tribonacci(arr,n);<br>
+            }<br>
+            return arr
+          }
+          </code>
+        </div>
+      </section>
+      <section id="contacts" class="contacts wrapper__contacts">
+        <div class="contacts__title">Contact me</div>
+        <ul>
+          <li>Telegram: <a href="https://t.me/AlPoltavsky">https://t.me/AlPoltavsky</a></li>
+          <li>VK: <a href="https://vk.com/yuhcha">https://vk.com/yuhcha</a></li>
+          <li>Skype: live:.cid.f4d2227481fd3f6d</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__github"><a href="https://github.com/AlexWayke"><p>Check my github </p><img src="./src/icons/icon-github.svg" alt="github"></a></div>
+    <div class="footer__date">2024</div>
+    <div class="footer__rss"><a href="https://rs.school/courses/javascript-ru"><img src="./src/icons/icon-rs-school.svg" alt="rs-school"></a></div>
+  </footer>
 </body>
 </html>
